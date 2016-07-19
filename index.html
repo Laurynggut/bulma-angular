@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+<base href="/">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./stylsheets/bulma.min.css">
+	<title>app angular</title>
+</head>
+<body>
+<header header-directive></header>
+<section class="container">
+<ng-view></ng-view>
+	
+</section>
+<!--<div ng-controller="indexController">
+<greetings-directive></greetings-directive>nos lo llevamos a greeting.html
+	<h1>{{greetings.salute}}</h1>
+	<h2>{{greetings.question}}</h2> Esto lo teniamos antes , pero vamos limpiandolo</div>-->
+
+
+<!--<h1>Hello World!</h1> esto lo poniamos al principio , pero ya no nos sirve, lo tenemos en app.js-->
+<script type="text/javascript" src="./lib/angular.min.js"></script>
+<script type="text/javascript" src="./lib/angular-resource.js"></script>
+<script type="text/javascript" src="./lib/angular-route.js"></script>
+<script type="text/javascript" src="./script/app.js"></script><!--enlace al nuestro js, ruta de nuestra carpeta script-->
+<script type="text/javascript" src="./script/controllers.js"></script>
+<script type="text/javascript" src="./script/directives.js"></script>
+<script type="text/javascript" src="./script/services.js"></script>
+
+</body>
+<footer></footer>
+</html>
